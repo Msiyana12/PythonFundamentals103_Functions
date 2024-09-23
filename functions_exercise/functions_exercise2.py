@@ -10,6 +10,12 @@
         # If the AGE is less than 17 print "You are young"
         # If the Age is more than 65 print "You are too old"  
     # Return all the inputs
+    
+def get_user_input ():
+    name = input ("Please enter your name :")
+    age = input ("Please enter your age:")
+    while not age.isdigit ():
+        print("Not an integer, enter a valid age! :")
 
 
 
@@ -21,7 +27,8 @@
     # Return the boolean
 
 def validate_Username():
-   pass
+    if not username :
+        return False
 
 
 # 3. Pass the parameters to the function below 'display_user_info'
@@ -33,6 +40,11 @@ def validate_Username():
 
 def display_user_info():
     print("\nUser Information:")
+    print(f"Username: {display_user_info}")
+    print(f"Age: {display_user_age}")
+    print(f"email: {display_user_email}")
+    return 'Thanks, details captured'
+
    
 
 # 4. Call all the functions

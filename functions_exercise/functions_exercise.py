@@ -8,7 +8,7 @@
 
 def add_numbers(a, b):
     # Your code here
-    pass
+    print(a + b)
 
 # Exercise 2: Return Values
 # Instructions:
@@ -20,7 +20,11 @@ def add_numbers(a, b):
 
 def calculate_sum(numbers):
     # Your code here
-    pass
+     return sum(numbers)
+     calculate_sum = add_numbers(numbers)
+     print(calculate_sum)
+
+
 
 # Exercise 3: Function Scoping
 # Instructions:
@@ -34,7 +38,9 @@ global_variable = "I am a global variable"
 def demonstrate_scoping():
     # Define a local variable here
     # Print both the global and local variables
-    pass
+    global variable ; "I am a global_variable"
+    
+    local_variable = "I am a local variable"
 
 # Exercise 4: Function Libraries
 # Instructions:
